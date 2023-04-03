@@ -13,4 +13,14 @@
     <string name="last_name">Last Name:</string>
     <string name="first_name">First Name:</string>
     <string name="favourite_color">Favourite Color:</string>
+
+   <!-- spinner strings-->
+    <string-array name="rooms_availability">
+        <item>All Rooms</item>
+        <item>Available Rooms</item>
+        <item>Occupied Rooms</item>
+    </string-array>
+
+
+
 </resources>

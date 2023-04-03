@@ -6,65 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".ui.people.PeopleFragment">
 
-
-<!--
-
-    <include
-        android:id="@+id/search_box_container"
-        layout="@layout/search_header"
+    <SearchView
+        android:id="@+id/searchPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/search_bar"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/rvPeople"/>
-
--->
-
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPeople"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-      <!--  app:layout_constraintTop_toBottomOf="@id/editTextSearch"-->
-
-
-
-   <!-- <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvPeople"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_box_container"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        tools:listitem="@layout/item_people" />
-
-    <TextView
-        android:id="@+id/no_search_results_found_text"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/no_search_results_found"
-        android:textAppearance="?attr/textAppearanceHeadline4"
-        android:visibility="invisible"
-        app:layout_constraintTop_toBottomOf="@id/rvPeople"
+android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.495" />
--->
+        app:layout_constraintTop_toBottomOf="@+id/searchPeople"
+        app:layout_constraintVertical_bias="0.198" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

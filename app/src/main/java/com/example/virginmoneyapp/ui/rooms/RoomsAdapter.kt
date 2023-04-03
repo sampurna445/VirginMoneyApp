@@ -6,11 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.virginmoneyapp.R
+import com.example.virginmoneyapp.data.models.roomsModel.RoomsModel
 import com.example.virginmoneyapp.data.models.roomsModel.RoomsModelItemModel
 import com.example.virginmoneyapp.databinding.ItemRoomBinding
 
 
-class RoomsAdapter(val rooms: ArrayList<RoomsModelItemModel>):
+class RoomsAdapter(var rooms: ArrayList<RoomsModelItemModel>):
 RecyclerView.Adapter<RoomsAdapter.ViewHolder>(){
 
     var onItemClick: ((RoomsModelItemModel) -> Unit)? = null
@@ -47,6 +48,12 @@ RecyclerView.Adapter<RoomsAdapter.ViewHolder>(){
                 onItemClick?.invoke(it)
             }
         }
+    }
+
+    fun updateData(filteredRooms: ArrayList<RoomsModelItemModel>) {
+        rooms = filteredRooms
+        notifyDataSetChanged()
+
     }
 
 }

@@ -7,10 +7,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
 import com.example.virginmoneyapp.R
+import com.example.virginmoneyapp.data.models.peopleModel.PeopleModel
 import com.example.virginmoneyapp.data.models.peopleModel.PeopleModelItemModel
 import com.example.virginmoneyapp.databinding.ItemPeopleBinding
 
-class PeopleAdapter(val people: ArrayList<PeopleModelItemModel>) :
+class PeopleAdapter(var people: ArrayList<PeopleModelItemModel>) :
     RecyclerView.Adapter<PeopleAdapter.ViewHolder>() {
     var onItemClick: ((PeopleModelItemModel) -> Unit)? = null
 
@@ -44,4 +45,10 @@ class PeopleAdapter(val people: ArrayList<PeopleModelItemModel>) :
 
     }
 
+
+    // update adapter with the filter data
+    fun updateData(filteredPeople: PeopleModel) {
+        people = filteredPeople
+        notifyDataSetChanged()
+    }
 }
