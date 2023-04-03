@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">VirginMoneyApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="people">People</string>
+    <string name="rooms">Rooms</string>
+    <string name="search_articles_hint">Search</string>
+    <string name="no_search_results_found">No results fouund</string>
+    <string name="place">Place:</string>
+    <string name="email">Email:</string>
+    <string name="job_title">Job Title:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="first_name">First Name:</string>
+    <string name="favourite_color">Favourite Color:</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.virginmoneyapp.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_people"
+        android:name="com.example.virginmoneyapp.ui.people.PeopleFragment"
+        android:label="People"
+        tools:layout="@layout/fragment_people" >
+        <action
+            android:id="@+id/action_navigation_people_to_peoplesDetails"
+            app:destination="@id/peoplesDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_rooms"
+        android:name="com.example.virginmoneyapp.ui.rooms.RoomsFragment"
+        android:label="Rooms"
+        tools:layout="@layout/fragment_rooms" >
+        <action
+            android:id="@+id/action_navigation_rooms_to_roomsDetails"
+            app:destination="@id/roomsDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/peoplesDetails"
+        android:name="com.example.virginmoneyapp.ui.PeoplesDetails.PeoplesDetailsFragment"
+        android:label="Pupil's Details"
+        tools:layout="@layout/fragment_peoples_details" />
+    <fragment
+        android:id="@+id/roomsDetails"
+        android:name="com.example.virginmoneyapp.ui.roomsDetails.RoomsDetailsFragment"
+        android:label="Room Details"
+        tools:layout="@layout/fragment_rooms_details" />
+</navigation>

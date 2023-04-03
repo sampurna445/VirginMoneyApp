@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cardPeople">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/card"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/llPeopleDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_name"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingEnd="20dp"
+            android:paddingStart="2dp"/>
+
+
+        <TextView
+            android:id="@+id/people_fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"
+
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingEnd="20dp"
+            android:paddingStart="2dp"/>
+
+        <TextView
+            android:id="@+id/people_lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/job_title"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingEnd="20dp"
+            android:paddingStart="2dp"/>
+        <TextView
+            android:id="@+id/people_jobtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingEnd="20dp"
+            android:paddingStart="2dp"/>
+        <TextView
+            android:id="@+id/people_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/favourite_color"
+            android:textStyle="bold"
+            android:paddingEnd="20dp"
+            android:paddingStart="2dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/people_favColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/avtar_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="10dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
